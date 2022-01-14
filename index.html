@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> 2022 우송대 강의 </title>
+        <meta charset = "utf-8">
+
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body onload="makeCursor()">
+
+        <div id = "box_main">
+            <style>
+                #box_main {
+                    width : 90%;
+                    height: 90%;
+                    /* background-color: #f5d682; */
+                    border: 3px solid white;
+                    margin:0 auto; 
+                }
+            </style>
+              
+            <div id="header">
+                <style>
+                    #header {
+                        width : 100%;
+                        /* background-color: #f5d682; */
+                        border: 1px solid white;
+                        margin:0 auto; 
+                    }
+                </style>
+                <h1 title = "header" style="text-align:center;"><a href = "index.html">2022 우송대 원클래스 - HTML</a></h1>
+
+
+            </div>
+            
+
+
+
+
+
+            <!-- fsdf
+            <div style="text-align:center;" id = "hi">
+                <img src="우송대.png">
+                <style>
+                    #hi {
+                        width : 79.5%;
+                        height: 89.5%;
+                        /* border: 1px solid white; */
+                        margin:0 auto; 
+                        float:right;
+                        
+                    }
+ 
+                </style>
+
+            </div> -->
+
+            <script>
+                function makeCursor() {
+                    document.onmousemove = function(e) {
+                        var div = document.getElementById("div");
+                        div.style.left = event.clientX-50 + "px"; // 단위 "px"를 꼭 붙여야 함
+                        div.style.top = event.clientY-25 + "px";
+                    }
+                }
+            </script>
+            
+            <style>
+                img {
+                    z-index : "0";
+                }
+            </style>
+
+            <!-- <div id="div" style="position: absolute;">
+                <img src="우송대.png" width="100px" height="50px">
+            </div> -->
+
+
+
+
+
+
+            <div id = "sideBar">
+                <style>
+                    #sideBar {
+                        width : 20%;
+                        height: 89.5%;
+                        border: 1px solid white;
+                        margin:0 auto; 
+                        float: left;
+                    }
+                </style>
+
+                
+                <br>
+                
+                <h2> <a href = "강의정보.html"> 강의 정보 </a> </h2>
+                
+                
+                <br>
+                
+                <h2> 팀원소개 </h2>
+                
+                <p><a target = "_blank" href = "teamInfo_Kim.html">김건우</a></p>
+                <p><a target = "_blank" href = "teamInfo_Bea.html">배송현</a></p>
+                
+                <br>
+                
+                
+                
+                <h2> 강의내용 </h2>
+                
+                <p><a href = "day_1.html">1일차</a></p> 
+                <p><a href = "day_1.html">2일차</a></p> 
+                <p><a href = "day_1.html">3일차</a></p> 
+                <p><a href = "day_1.html">4일차</a></p>
+                
+                
+                
+                <br>
+                <h2> <a href = "Time.html">현재시각</a> </h2>
+            </div>
+
+
+
+
+
+        </div>
+
+    </body>
+</html>
